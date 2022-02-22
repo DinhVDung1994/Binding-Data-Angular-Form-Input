@@ -15,9 +15,20 @@ result:number =0
   }
 
   onClickPlus(){
-    console.log(this.a)
-    console.log(this.b)
     this.result=this.a+this.b
 
+  }
+  onClickSub(){
+  this.result = this.a-this.b
+  }
+  onClickMulti(){
+  this.result = this.a*this.b
+  }
+  onClickDiv(){
+  if (this.b==0){
+    alert("Phép Chia Sai.Số B Khác 0")
+  } else {
+    this.result = this.a/this.b
+  }
   }
 }
